@@ -58,124 +58,26 @@
         <main>
           <div class = "container">
             <h2 class="text-center">Recent Projects</h2>
-          <div class="row p-3">
-            <div class="col-sm-6 col-md-4 d-flex justify-content-around">
-              <div
-                class="card shadow p-0 mb-5 bg-white rounded"
-                style="width: 18rem;"
-              >
-                <img
-                  src="img/KIMG0633.jpg"
-                  class="card-img-top"
-                  alt="Walk-in shower with white tile surround."
+          <form>
+              <div class="form-group">
+                <label for="project-filter">Filter</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="project-filter"
+                  placeholder="Filter projects"
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Walk In Shower</h5>
-                  <h6 class="card-subtitle text-secondary font-italic">Garnet Street</h6>
-                  <p class="card-text">
-                    Mosaic accent strip, pebble floor, shower shelves.
-                  </p>
-                </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-4 d-flex justify-content-around">
-              <div
-                class="card shadow p-0 mb-5 bg-white rounded"
-                style="width: 18rem;"
-              >
-                <img
-                  src="img/IMG_6776.JPG"
-                  class="card-img-top"
-                  alt="Bathroom with gray walls and earthy green tile shower surround."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Full Bath Renovation</h5>
-                  <h6 class="card-subtitle text-secondary font-italic">Crow Hill Condos</h6>
-                  <p class="card-text">
-                    Tile flooring, tile shower surround, tub installation.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 d-flex justify-content-around">
-              <div
-                class="card shadow p-0 mb-5 bg-white rounded"
-                style="width: 18rem;"
-              >
-                <img
-                  src="img/KIMG0768.jpg"
-                  class="card-img-top"
-                  alt="Bathroom with peach walls and white tile shower surround."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Full Bath Renovation</h5>
-                  <h6 class="card-subtitle text-secondary font-italic">Garnet Street</h6>
-                  <p class="card-text">
-                    Vinyl plank flooring, tile shower surround, tub installation.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 d-flex justify-content-around">
-              <div
-                class="card shadow p-0 mb-5 bg-white rounded"
-                style="width: 18rem;"
-              >
-                <img
-                  src="img/KIMG0858.jpg"
-                  class="card-img-top"
-                  alt="Shower with white tile surround and a white tub."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Full Bath Renovation</h5>
-                  <h6 class="card-subtitle text-secondary font-italic">Taku Terrace Condos</h6>
-                  <p class="card-text">
-                    Vinyl plank flooring, tile shower surround with inset, tub installation.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 d-flex justify-content-around">
-              <div
-                class="card shadow p-0 mb-5 bg-white rounded"
-                style="width: 18rem;"
-              >
-                <img
-                  src="img/KIMG0915.jpg"
-                  class="card-img-top"
-                  alt="Walk in shower with gray tile surround."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Full Bath Renovation</h5>
-                  <h6 class="card-subtitle text-secondary font-italic">Capital View Condos</h6>
-                  <p class="card-text">
-                    Vinyl plank flooring, walk in shower with bench, tile shower surround, glass shower door. 
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 d-flex justify-content-around">
-              <div
-                class="card shadow p-0 mb-5 bg-white rounded"
-                style="width: 18rem;"
-              >
-                <img
-                  src="img/IMG_6762.JPG"
-                  class="card-img-top"
-                  alt="Kitchen with gray counter tops, black glass-top stove, gray tile backsplash."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Kitchen Upgrade</h5>
-                  <h6 class="card-subtitle text-secondary font-italic">Crow Hill Condos</h6>
-                  <p class="card-text">
-                    New tile backsplash and formica countertops.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          </form>
+          <div class="row p-3 d-flex justify-content-around" id = "columns">
         </div>
         </main>
+
+        <script src="js/projects.js"></script>
+        <script src="js/app.js"></script>
+        <script>
+          renderProjects(PROJECTS);
+        </script>
     <footer>
         <div class="container">
         <p>Luedke Construction | PO Box 210386 | Auke Bay, AK 99821 | (907)419-8170 | luedkeconstruction@gmail.com </p>
