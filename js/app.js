@@ -2,7 +2,7 @@ function renderProjects(project_cards) {
   const container = document.getElementById("columns");
   container.textContent = "";
 
-  PROJECTS.forEach((result) => {
+  project_cards.forEach((result) => {
     // Construct card content
     const content = `
   <div class="col-sm-6 col-md-4 d-flex justify-content-around">
